@@ -1,0 +1,63 @@
+<div class="title">Новый клиент</div>
+<form>
+  <div class="input_container">
+    <div class="client_data">
+      <span>Данные клиента</span>
+      <div class="colomn">
+        <input type="text" placeholder="Фамилия*" formControlName="name" />
+        <input type="text" placeholder="Имя*" formControlName="surname" />
+        <input type="text" placeholder="Отчество*" formControlName="patronymic" />
+      </div>
+      <div class="patronymic">
+        <input type="checkbox" formControlName="withoutPatronymic" />
+        <span>Нет отчества</span>
+      </div>
+      <div class="gender">
+        <div>
+          <input type="radio" formControlName="man" />
+          <span>Мужчина</span>
+          <input type="radio" formControlName="woman" />
+          <span>Женщина</span>
+        </div>
+      </div>
+      <div class="colomn">
+        <input type="text" placeholder="Дата рождения*" formControlName="dateOfBirth" />
+        <input type="text" placeholder="Телефон*" formControlName="phone" />
+        <input type="text" placeholder="СНИЛС" formControlName="snils" />
+      </div>
+    </div>
+    <div>
+      <div class="pasport_data">
+        <span>Паспортные данные</span>
+        <div class="colomn">
+          <div>
+            <input type="number" placeholder="Серия*" />
+            <input type="number" placeholder="Номер*" />
+          </div>
+          <div>
+            <input type="number" placeholder="Код подразделения" />
+            <input type="number" placeholder="Дата выдачи" />
+          </div>
+          <input type="number" placeholder="Кем выдан" />
+        </div>
+      </div>
+      <div class="address">
+        <span>Адрес</span>
+        <div class="colomn">
+          <input type="text" placeholder="Регион" />
+          <input type="text" placeholder="Населенный пункт" />
+          <input type="text" placeholder="Улица" />
+          <div>
+            <input type="text" placeholder="Дом" />
+            <input type="text" placeholder="Корпус" />
+            <input type="text" placeholder="Квартира" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="button_container">
+    <button type="button">Очистить</button>
+    <button type="submit">Сохранить</button>
+  </div>
+</form>
